@@ -1,6 +1,6 @@
 # Custom Advancement API
 
-[Custom Advancement](https://github.com/) 플러그인의 공개 API입니다.
+[Custom Advancement](https://github.com/Extra-04/CustomAdvancement-API) 플러그인의 공개 API입니다.
 다른 플러그인에서 커스텀 발전과제를 조회하거나, 달성 여부를 다루거나,
 달성 순간에 개입하고 싶을 때 씁니다.
 
@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.Extra04:CustomAdvancement-API:1.0")
+    compileOnly("com.github.Extra-04:CustomAdvancement-API:1.0")
 }
 ```
 
@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.github.Extra04:CustomAdvancement-API:1.0'
+    compileOnly 'com.github.Extra-04:CustomAdvancement-API:1.0'
 }
 ```
 
@@ -56,7 +56,7 @@ dependencies {
 </repositories>
 
 <dependency>
-    <groupId>com.github.Extra04</groupId>
+    <groupId>com.github.Extra-04</groupId>
     <artifactId>CustomAdvancement-API</artifactId>
     <version>1.0</version>
     <scope>provided</scope>
