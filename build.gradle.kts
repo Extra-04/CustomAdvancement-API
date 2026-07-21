@@ -36,6 +36,25 @@ tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
 }
 
+tasks.withType<Jar> {
+    // 라이선스를 jar 안에 함께 넣는다. jar 만 받아 쓰는 사람도 조건을 알 수 있어야 한다.
+    // rootDir 을 쓰는 이유: 이 모듈은 단독 저장소로도, 플러그인의 하위 모듈로도 빌드되는데
+    // 후자에서는 LICENSE 가 이 폴더(projectDir) 에 있고 rootDir 은 상위가 된다.
+    from(projectDir) {
+        include("LICENSE")
+        into("META-INF")
+    }
+
+    manifest {
+        attributes(
+            "Implementation-Title" to "CustomAdvancement-API",
+            "Implementation-Version" to project.version,
+            "Implementation-Vendor" to "Extra-04",
+            "Automatic-Module-Name" to "io.github.extra04.customadvancement.api",
+        )
+    }
+}
+
 tasks.withType<Javadoc> {
     (options as StandardJavadocDocletOptions).encoding = "UTF-8"
     (options as StandardJavadocDocletOptions).charSet = "UTF-8"
