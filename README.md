@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.Extra-04:CustomAdvancement-API:1.0")
+    compileOnly("com.github.Extra-04:CustomAdvancement-API:1.0.1")
 }
 ```
 
@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.github.Extra-04:CustomAdvancement-API:1.0'
+    compileOnly 'com.github.Extra-04:CustomAdvancement-API:1.0.1'
 }
 ```
 
@@ -58,7 +58,7 @@ dependencies {
 <dependency>
     <groupId>com.github.Extra-04</groupId>
     <artifactId>CustomAdvancement-API</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <scope>provided</scope>
 </dependency>
 ```

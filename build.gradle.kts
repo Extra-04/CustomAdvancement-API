@@ -13,7 +13,7 @@ plugins {
 group = "io.github.extra04"
 // 고정값으로 둔다. 이 폴더는 플러그인 본체의 하위 모듈로도, 단독 저장소로도 빌드되는데
 // rootProject.version 을 참조하면 단독 빌드(예: JitPack)에서 "unspecified" 가 된다.
-version = "1.0"
+version = "1.0.1"
 
 java {
     toolchain { languageVersion.set(JavaLanguageVersion.of(21)) }
